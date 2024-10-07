@@ -51,8 +51,8 @@ app.get("/blog", (req, res) => {
   res.sendFile(__dirname + "/views/blog.html")
 })
 
-// app.use((req, res) => {
-//   res.status(404).sendFile(__dirname + "/views/not-found.html")})
+app.use((req, res) => {
+  res.status(404).sendFile(__dirname + "/views/not-found.html")})
 
 
 
